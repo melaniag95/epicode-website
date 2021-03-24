@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Fira Sans, Helvetica, Arial, sans-serif;
+}
+
+/*Stile navbar*/
+button.btn{
+    background: linear-gradient(to top, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+/*HOME*/
+
+/*Stile banner*/
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner h1{
+    font-weight: 500;
+}
+
+.banner h1, .banner p{
+    text-shadow: 1px 1px black;
+}
+
+.banner p{
+    line-height: 1.6rem;
+}
+
+
+
+/*Sezione iniziale*/
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-section{
+    text-align: center;
+}
+
+.fa{
+    color: #ff1a1a;
+    font-size: 1.7rem;
+}
+
+
+div.flex-container p{
+    text-align: left;
+}
+
+/*Stile sezione "scrivici"*/
+.scrivici-section{
+    background-color: #26004d;
+    text-align: center;
+}
+
+/*Stile sezione skills web developer*/
+.txt{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.icon-container{
+    font-size: 1.8rem;
+    line-height: 100%;
+}
+
+
+hr{
+    border: 1x solid #999999;
+    margin: 10px;
+}
+
+/*Stile footer*/
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.footer-container div.footer-section{
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form{
+    width:100%;
+}
+
+.footer-container .fa{
+    color: #000;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0 0 2px #888
+}
+
+
+/*Media query per min-width 768px*/
+@media screen and (min-width:768px){
+    .flex-container, .footer-container{
+        width: 95%;
+        margin: 30px auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .home-section{
+        width: 100%;
+        margin: auto;
+    }
+
+    ul.navbar-nav li:last-of-type{
+        background: #3a7bd5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     }
+
+     ul.navbar-nav li:last-of-type a{
+         color: white!important;
+     }
+
+
+    #banner-text-container{
+        width:50%;
+        margin-left:100px;
+        padding:100px;
+    }
+
+    .paragraph-container{
+        width: 33%;
+    }
+
+    .paragraph-container h3{
+        font-size: 1.5rem;
+    }
+
+    .scrivici-container{
+        width: 70%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .scrivici-section{
+        width: 100%;
+    }
+
+    .scrivici-container h2{
+        font-size: 2.1rem;
+    }
+
+
+    .skills-section{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+   }
+
+   .skills-section > div{
+       margin: 50px;
+   }
+
+
+   .footer-container div.footer-section{
+       width: 30%;
+       margin: 10px;
+   }
+}
+
+
+/*CONTATTI*/
+h1.contatti-titolo{
+    text-align: center;
+}
+
+.flex-container{
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width:768px){
+.flex-container section.form-section{
+    width: 100%;
+}
+}
+
+@media screen and (min-width:768px){
+    .flex-container > section{
+        width:50%;
+    }
+}
+
+/*CHI SIAMO*/
+section.chi-siamo h1{
+    text-align: center;
+}
+
+div.chi-siamo-img-container{
+    width: 80%;
+    margin: auto;
+}
+
+div.chi-siamo-img-container img{
+    width: 100%;
+}
+
+.corso{
+    width: 100%;
+    padding:100px;
+    text-align: center;
+    transform: skewX(-10deg);
+}
+
+.corso-base{
+    background-color: aqua;
+}
+
+.corso-intermedio{
+    background-color: red;
+}
+
+.corso-full{
+    background-color: #ffff4d;
+}
+
+span.checked{
+    color:#ff1a1a;
+}
+
+.specifiche-corso{
+    margin: auto;
+    background-color: #f2f2f2;
+}
+
+@media screen and (min-width:768px){
+    .main-container{
+        width: 80%;
+        margin: auto;
+    }
+
+    .box-container, .elenco-corsi{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .corso-container{
+        margin: 20px;
+    }
+
+    .box{
+        width: 50%;
+    }
+
+    .specifiche-corso{
+        height: 50%;
+    }
+}
